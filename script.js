@@ -1,4 +1,5 @@
-const cardList = ['card1.jpeg', 'card2.jpeg', 'card3.jpeg']; // Add your real image names here
+// List of your activity card images
+const cardList = ['card1.jpeg', 'card2.jpeg', 'card3.jpeg']; // Add more if you have
 
 let cardFlipped = false;
 
@@ -9,7 +10,7 @@ function flipCard() {
     cardImage.src = randomCard;
     cardFlipped = true;
   } else {
-    cardImage.src = 'back.jpeg';
+    cardImage.src = 'back.jpg'; // Show back side again
     cardFlipped = false;
   }
 }
