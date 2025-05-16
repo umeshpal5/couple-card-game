@@ -1,5 +1,8 @@
-// List of your activity card images
-const cardList = ['card1.jpeg', 'card2.jpeg', 'card3.jpeg']; // Add more if you have
+// Generate array of 85 cards dynamically
+const cardList = [];
+for (let i = 1; i <= 85; i++) {
+  cardList.push(`card${i}.jpeg`);
+}
 
 let cardFlipped = false;
 
@@ -10,7 +13,7 @@ function flipCard() {
     cardImage.src = randomCard;
     cardFlipped = true;
   } else {
-    cardImage.src = 'back.jpg'; // Show back side again
+    cardImage.src = 'back.jpg';
     cardFlipped = false;
   }
 }
