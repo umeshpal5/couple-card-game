@@ -1,4 +1,4 @@
-const cardList = ['card1.jpg', 'card2.jpg', 'card3.jpg']; // Add more image names
+const cardList = ['card1.jpeg', 'card2.jpeg', 'card3.jpeg']; // Add your real image names here
 
 let cardFlipped = false;
 
@@ -9,7 +9,7 @@ function flipCard() {
     cardImage.src = randomCard;
     cardFlipped = true;
   } else {
-    cardImage.src = 'back.jpg';
+    cardImage.src = 'back.jpeg';
     cardFlipped = false;
   }
 }
